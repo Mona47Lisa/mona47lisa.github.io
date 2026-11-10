@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Vista previa de ejemplo: landing page responsive">
+  <defs>
+    <linearGradient id="p3bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f7fb"/>
+      <stop offset="1" stop-color="#e9ebf4"/>
+    </linearGradient>
+    <linearGradient id="p3art" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b93ff"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="p3shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#1b1d2c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#p3bg)"/>
+  <circle cx="90" cy="80" r="150" fill="#ffffff" opacity="0.7"/>
+  <circle cx="1120" cy="690" r="170" fill="#dfe3fb" opacity="0.7"/>
+
+  <rect x="110" y="70" width="980" height="610" rx="22" fill="#ffffff" filter="url(#p3shadow)"/>
+
+  <rect x="110" y="70" width="980" height="70" rx="22" fill="#ffffff"/>
+  <rect x="110" y="118" width="980" height="22" fill="#ffffff"/>
+  <rect x="110" y="139" width="980" height="1" fill="#e2e4ec"/>
+
+  <rect x="150" y="96" width="26" height="26" rx="7" fill="#4f46e5"/>
+  <rect x="188" y="103" width="86" height="11" rx="5" fill="#15171c"/>
+  <rect x="620" y="103" width="52" height="8" rx="4" fill="#c9cddb"/>
+  <rect x="696" y="103" width="52" height="8" rx="4" fill="#c9cddb"/>
+  <rect x="772" y="103" width="52" height="8" rx="4" fill="#c9cddb"/>
+  <rect x="912" y="92" width="140" height="34" rx="17" fill="#4f46e5"/>
+  <rect x="944" y="107" width="76" height="6" rx="3" fill="#ffffff" opacity="0.85"/>
+
+  <g>
+    <rect x="152" y="196" width="120" height="26" rx="13" fill="#eef0ff"/>
+    <rect x="170" y="206" width="84" height="6" rx="3" fill="#4f46e5"/>
+    <rect x="152" y="252" width="380" height="26" rx="8" fill="#15171c"/>
+    <rect x="152" y="292" width="310" height="26" rx="8" fill="#15171c"/>
+    <rect x="152" y="332" width="240" height="26" rx="8" fill="#8b93ff"/>
+    <rect x="152" y="382" width="330" height="9" rx="4" fill="#dfe2ea"/>
+    <rect x="152" y="402" width="290" height="9" rx="4" fill="#dfe2ea"/>
+    <rect x="152" y="446" width="150" height="42" rx="12" fill="#4f46e5"/>
+    <rect x="176" y="463" width="102" height="7" rx="3" fill="#ffffff" opacity="0.85"/>
+    <rect x="320" y="446" width="130" height="42" rx="12" fill="#ffffff" stroke="#e2e4ec"/>
+    <rect x="344" y="463" width="82" height="7" rx="3" fill="#9aa1b1"/>
+  </g>
+
+  <g>
+    <rect x="600" y="196" width="440" height="292" rx="18" fill="url(#p3art)"/>
+    <circle cx="930" cy="276" r="74" fill="#ffffff" opacity="0.18"/>
+    <circle cx="700" cy="420" r="104" fill="#ffffff" opacity="0.12"/>
+    <rect x="648" y="366" width="180" height="12" rx="6" fill="#ffffff" opacity="0.55"/>
+    <rect x="648" y="392" width="120" height="12" rx="6" fill="#ffffff" opacity="0.35"/>
+    <rect x="648" y="228" width="70" height="18" rx="9" fill="#ffffff" opacity="0.3"/>
+  </g>
+
+  <g>
+    <rect x="152" y="538" width="288" height="104" rx="14" fill="#f8f9fd" stroke="#e8eaf2"/>
+    <circle cx="182" cy="572" r="13" fill="#eef0ff"/>
+    <rect x="208" y="564" width="120" height="9" rx="4" fill="#15171c"/>
+    <rect x="208" y="584" width="190" height="7" rx="3" fill="#dfe2ea"/>
+
+    <rect x="460" y="538" width="288" height="104" rx="14" fill="#f8f9fd" stroke="#e8eaf2"/>
+    <circle cx="490" cy="572" r="13" fill="#eef0ff"/>
+    <rect x="516" y="564" width="140" height="9" rx="4" fill="#15171c"/>
+    <rect x="516" y="584" width="170" height="7" rx="3" fill="#dfe2ea"/>
+
+    <rect x="768" y="538" width="272" height="104" rx="14" fill="#f8f9fd" stroke="#e8eaf2"/>
+    <circle cx="798" cy="572" r="13" fill="#eef0ff"/>
+    <rect x="824" y="564" width="112" height="9" rx="4" fill="#15171c"/>
+    <rect x="824" y="584" width="160" height="7" rx="3" fill="#dfe2ea"/>
+  </g>
+
+  <text x="1050" y="712" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="15" fill="#15171c" opacity="0.35">vista previa de ejemplo</text>
+</svg>

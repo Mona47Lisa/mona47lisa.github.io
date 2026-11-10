@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Portada del portfolio">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="28%" r="62%">
+      <stop offset="0" stop-color="#4f46e5" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0b0c10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b93ff"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0b0c10"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 160h1200M0 320h1200M0 480h1200"/>
+    <path d="M200 0v630M400 0v630M600 0v630M800 0v630M1000 0v630"/>
+  </g>
+
+  <rect x="80" y="76" width="64" height="64" rx="18" fill="url(#mark)"/>
+  <path d="M96 122V96l16 16 16-16v26" fill="none" stroke="#0b0c10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="164" y="118" font-family="ui-monospace, Consolas, monospace" font-size="19" letter-spacing="4" fill="#9aa1b1">PORTFOLIO · 2026</text>
+
+  <text x="80" y="300" font-family="Segoe UI, system-ui, sans-serif" font-size="92" font-weight="700" letter-spacing="-3" fill="#ecedf3">Mona Lisa</text>
+  <text x="82" y="372" font-family="Segoe UI, system-ui, sans-serif" font-size="38" font-weight="400" fill="#8b93ff">Desarrolladora Web Junior</text>
+  <text x="82" y="436" font-family="Segoe UI, system-ui, sans-serif" font-size="26" fill="#9aa1b1">Interfaces claras, accesibles y rápidas.</text>
+
+  <g font-family="ui-monospace, Consolas, monospace" font-size="20" fill="#c9cdf7">
+    <rect x="80" y="482" width="118" height="46" rx="23" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16"/>
+    <text x="139" y="512" text-anchor="middle">HTML</text>
+    <rect x="212" y="482" width="106" height="46" rx="23" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16"/>
+    <text x="265" y="512" text-anchor="middle">CSS</text>
+    <rect x="332" y="482" width="196" height="46" rx="23" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16"/>
+    <text x="430" y="512" text-anchor="middle">JavaScript</text>
+    <rect x="542" y="482" width="120" height="46" rx="23" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.16"/>
+    <text x="602" y="512" text-anchor="middle">Git</text>
+  </g>
+
+  <text x="80" y="576" font-family="ui-monospace, Consolas, monospace" font-size="18" fill="#5b6170">mona47lisa.github.io</text>
+</svg>

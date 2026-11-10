@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Vista previa de ejemplo: aplicación del tiempo">
+  <defs>
+    <linearGradient id="p2bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1e2e"/>
+      <stop offset="1" stop-color="#0b0c10"/>
+    </linearGradient>
+    <radialGradient id="p2glow" cx="78%" cy="18%" r="55%">
+      <stop offset="0" stop-color="#4f46e5" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#0b0c10" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="p2shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#p2bg)"/>
+  <rect width="1200" height="750" fill="url(#p2glow)"/>
+
+  <rect x="110" y="86" width="980" height="578" rx="22" fill="#13151b" stroke="#242732" filter="url(#p2shadow)"/>
+  <rect x="110" y="86" width="980" height="54" rx="22" fill="#191c24"/>
+  <rect x="110" y="118" width="980" height="22" fill="#191c24"/>
+  <circle cx="150" cy="113" r="7" fill="#3b3f52"/>
+  <circle cx="174" cy="113" r="7" fill="#3b3f52"/>
+  <circle cx="198" cy="113" r="7" fill="#3b3f52"/>
+  <rect x="420" y="99" width="360" height="28" rx="14" fill="#23262f"/>
+
+  <text x="160" y="206" font-family="ui-monospace, Consolas, monospace" font-size="16" letter-spacing="2" fill="#9aa1b1">TIEMPO · HOY</text>
+  <text x="160" y="290" font-family="Segoe UI, system-ui, sans-serif" font-size="86" font-weight="700" fill="#ecedf3">18°</text>
+  <text x="160" y="330" font-family="Segoe UI, system-ui, sans-serif" font-size="24" fill="#9aa1b1">[Tu ciudad]</text>
+  <text x="160" y="368" font-family="ui-monospace, Consolas, monospace" font-size="16" fill="#6b7185">Parcialmente nublado · Sensación 16°</text>
+
+  <g transform="translate(560 170)">
+    <circle cx="60" cy="60" r="34" fill="#8b93ff" opacity="0.25"/>
+    <circle cx="60" cy="60" r="24" fill="#8b93ff"/>
+    <g stroke="#8b93ff" stroke-width="5" stroke-linecap="round" opacity="0.8">
+      <path d="M60 12v10M60 98v10M12 60h10M98 60h10M26 26l7 7M87 87l7 7M94 26l-7 7M33 87l-7 7"/>
+    </g>
+    <path d="M118 110a24 24 0 0 0-4-47 34 34 0 0 0-63 12 22 22 0 0 0 6 43Z" fill="#2b2f45" opacity="0.9"/>
+    <path d="M118 110a24 24 0 0 0-4-47 34 34 0 0 0-63 12 22 22 0 0 0 6 43Z" fill="#c9cdf7" opacity="0.55"/>
+  </g>
+
+  <g>
+    <rect x="160" y="424" width="196" height="150" rx="16" fill="#191c24" stroke="#242732"/>
+    <text x="186" y="462" font-family="ui-monospace, Consolas, monospace" font-size="14" letter-spacing="1" fill="#6b7185">MAR</text>
+    <circle cx="216" cy="506" r="15" fill="#8b93ff" opacity="0.7"/>
+    <text x="186" y="556" font-family="Segoe UI, system-ui, sans-serif" font-size="22" font-weight="600" fill="#ecedf3">21°</text>
+
+    <rect x="372" y="424" width="196" height="150" rx="16" fill="#4f46e5" stroke="#6f68ff"/>
+    <text x="398" y="462" font-family="ui-monospace, Consolas, monospace" font-size="14" letter-spacing="1" fill="#c9cdf7">MIÉ</text>
+    <circle cx="428" cy="506" r="15" fill="#ffffff" opacity="0.85"/>
+    <text x="398" y="556" font-family="Segoe UI, system-ui, sans-serif" font-size="22" font-weight="600" fill="#ffffff">18°</text>
+
+    <rect x="584" y="424" width="196" height="150" rx="16" fill="#191c24" stroke="#242732"/>
+    <text x="610" y="462" font-family="ui-monospace, Consolas, monospace" font-size="14" letter-spacing="1" fill="#6b7185">JUE</text>
+    <rect x="632" y="494" width="26" height="10" rx="5" fill="#8b93ff" opacity="0.5"/>
+    <circle cx="670" cy="512" r="13" fill="#8b93ff" opacity="0.7"/>
+    <text x="610" y="556" font-family="Segoe UI, system-ui, sans-serif" font-size="22" font-weight="600" fill="#ecedf3">15°</text>
+
+    <rect x="796" y="424" width="244" height="150" rx="16" fill="#191c24" stroke="#242732"/>
+    <text x="822" y="462" font-family="ui-monospace, Consolas, monospace" font-size="14" letter-spacing="1" fill="#6b7185">VIE</text>
+    <circle cx="852" cy="506" r="15" fill="#8b93ff" opacity="0.7"/>
+    <text x="822" y="556" font-family="Segoe UI, system-ui, sans-serif" font-size="22" font-weight="600" fill="#ecedf3">23°</text>
+  </g>
+
+  <rect x="160" y="604" width="880" height="42" rx="12" fill="#191c24" stroke="#242732"/>
+  <text x="184" y="631" font-family="ui-monospace, Consolas, monospace" font-size="15" fill="#6b7185">Buscar ciudad…</text>
+
+  <text x="1050" y="706" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="15" fill="#9aa1b1" opacity="0.4">vista previa de ejemplo</text>
+</svg>

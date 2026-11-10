@@ -1,0 +1,76 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 1925 >>
+stream
+0.31 0.27 0.90 rg
+BT /F2 26 Tf 56 782 Td (Mona Lisa) Tj ET
+0.36 0.38 0.44 rg
+BT /F1 13 Tf 56 758 Td (Desarrolladora Web Junior) Tj ET
+0.89 0.90 0.93 RG 0.8 w 56 738 m 539 738 l S
+0.36 0.38 0.44 rg
+BT /F1 10 Tf 56 716 Td (Este es un CV de ejemplo. Sustituye assets/cv/cv.pdf por tu CV real \(puedes exportarlo desde Google Docs, Figma o Word\).) Tj ET
+0.31 0.27 0.90 rg
+BT /F2 11 Tf 56 668 Td (PERFIL) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 648 Td (Desarrolladora web junior con formacion en HTML, CSS y JavaScript.) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 632 Td (Interesada en interfaces accesibles, codigo ordenado y aprendizaje continuo.) Tj ET
+0.31 0.27 0.90 rg
+BT /F2 11 Tf 56 596 Td (HABILIDADES) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 576 Td (HTML5 semantico · CSS3 \(Flexbox y Grid\) · JavaScript \(ES6+\) · Git y GitHub) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 560 Td (Responsive · Accesibilidad \(WCAG\) · GitHub Pages · Figma) Tj ET
+0.31 0.27 0.90 rg
+BT /F2 11 Tf 56 524 Td (PROYECTOS) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 504 Td ([Nombre del proyecto 1] - Gestor de tareas con guardado local.) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 488 Td ([Nombre del proyecto 2] - Consulta del tiempo con una API publica.) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 472 Td ([Nombre del proyecto 3] - Landing responsive para negocio local.) Tj ET
+0.31 0.27 0.90 rg
+BT /F2 11 Tf 56 436 Td (FORMACION) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 416 Td ([Ciclo / bootcamp / curso] - [Centro] - [Ano]) Tj ET
+0.31 0.27 0.90 rg
+BT /F2 11 Tf 56 380 Td (IDIOMAS) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 360 Td (Espanol \(nativo\) · [Ingles B1]) Tj ET
+0.31 0.27 0.90 rg
+BT /F2 11 Tf 56 324 Td (CONTACTO) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 304 Td ([tu@email.com] · github.com/[tu-usuario] · linkedin.com/in/[tu-usuario]) Tj ET
+0.08 0.09 0.11 rg
+BT /F1 10.5 Tf 56 288 Td ([Tu ciudad] - Disponible en remoto) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000348 00000 n 
+0000000450 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2426
+%%EOF

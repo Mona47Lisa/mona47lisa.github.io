@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mona47lisa.github.io/sitemap.xml

@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mona Lisa · Desarrolladora Web Junior</title>
+  <meta name="description" content="Portfolio de Mona Lisa, desarrolladora web junior. Proyectos con HTML, CSS y JavaScript, con foco en accesibilidad, detalle y rendimiento.">
+  <meta name="theme-color" content="#fbfbfd">
+  <link rel="canonical" href="https://mona47lisa.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Mona Lisa · Desarrolladora Web Junior">
+  <meta property="og:description" content="Proyectos con HTML, CSS y JavaScript. Interfaces claras, accesibles y rápidas.">
+  <meta property="og:url" content="https://mona47lisa.github.io/">
+  <meta property="og:image" content="https://mona47lisa.github.io/assets/img/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('portfolio-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = stored || (prefersDark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.dataset.theme = 'light';
+      }
+
+      // Activa la animación de entrada antes del primer pintado para evitar
+      // que el contenido parpadee. Si el navegador no la soporta, no se oculta nada.
+      try {
+        var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if ('IntersectionObserver' in window && !reduced) {
+          document.documentElement.classList.add('reveal-enabled');
+
+          // Si main.js no llega a cargarse, muestra todo el contenido igualmente.
+          window.setTimeout(function () {
+            if (!window.__portfolioRevealReady) {
+              document.documentElement.classList.remove('reveal-enabled');
+            }
+          }, 3000);
+        }
+      } catch (error) {
+        document.documentElement.classList.remove('reveal-enabled');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100" focusable="false">
+            <path d="M22 74V26l28 30 28-30v48" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">Mona Lisa</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar a tema oscuro">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+          </svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </button>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+          <span class="menu-bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Disponible para prácticas y primer empleo</p>
+
+        <h1 class="hero-title">
+          Hola, soy <span class="accent">Mona Lisa</span>.<br>
+          Construyo webs claras y accesibles.
+        </h1>
+
+        <p class="hero-lead">
+          Desarrolladora web junior. Convierto ideas en interfaces con HTML, CSS
+          y JavaScript, cuidando el detalle, el rendimiento y la accesibilidad.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#proyectos">
+            Ver proyectos
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M5 12h14m-6-6 6 6-6 6"/>
+            </svg>
+          </a>
+          <!-- TODO: sube tu CV a assets/cv/cv.pdf y borra este comentario si cambia la ruta -->
+          <a class="button button-ghost" href="assets/cv/cv.pdf" download>Descargar CV</a>
+        </div>
+
+        <ul class="hero-meta">
+          <li>[Tu ciudad] · Abierta a remoto</li>
+          <li>Aprendiendo cada semana</li>
+          <li>HTML · CSS · JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 · Sobre mí</p>
+          <h2 id="sobre-mi-title">Curiosa, ordenada y con ganas de aprender</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Me formé en desarrollo web y desde entonces no he parado de construir
+              cosas pequeñas para entenderlas bien. Me interesa el momento en el que
+              una maqueta se convierte en una página que se puede usar: el HTML que
+              tiene sentido, el CSS que no se pelea consigo mismo y el JavaScript
+              que solo aparece cuando hace falta.
+            </p>
+            <p>
+              Busco un equipo donde seguir creciendo como desarrolladora junior,
+              con revisión de código y proyectos reales. Mientras tanto, documento
+              lo que aprendo y publico cada práctica en GitHub.
+            </p>
+
+            <dl class="facts">
+              <div class="fact">
+                <dt>Formación</dt>
+                <dd>[Ciclo / bootcamp / curso]</dd>
+              </div>
+              <div class="fact">
+                <dt>Ubicación</dt>
+                <dd>[Tu ciudad] · Remoto</dd>
+              </div>
+              <div class="fact">
+                <dt>Idiomas</dt>
+                <dd>Español · [Inglés B1]</dd>
+              </div>
+              <div class="fact">
+                <dt>Buscando</dt>
+                <dd>Prácticas o primer empleo</dd>
+              </div>
+            </dl>
+          </div>
+
+          <figure class="about-photo reveal">
+            <img src="assets/img/MonaLisa.jpeg" alt="Retrato de Mona Lisa" width="1536" height="1536" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 · Proyectos</p>
+          <h2 id="proyectos-title">Trabajos que puedo explicar de principio a fin</h2>
+          <p class="section-lead">
+            Tres proyectos de ejemplo. Cada tarjeta enlaza a la demo publicada y al
+            código fuente, para que se vea tanto el resultado como el proceso.
+          </p>
+        </div>
+
+        <!-- TODO: cambia las URLs de ejemplo (example.com y github.com/ejemplo) por las reales. -->
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <figure class="project-media">
+              <img src="assets/img/proyecto-1.svg" alt="Vista previa de [Nombre del proyecto 1]" width="1200" height="750" loading="lazy" decoding="async">
+            </figure>
+            <div class="project-body">
+              <h3>[Nombre del proyecto 1]</h3>
+              <p>Gestor de tareas con guardado local: crear, completar y filtrar sin recargar la página.</p>
+              <ul class="tags" aria-label="Tecnologías">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://example.com/proyecto-1" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/ejemplo/proyecto-1" target="_blank" rel="noopener noreferrer">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <figure class="project-media">
+              <img src="assets/img/proyecto-2.svg" alt="Vista previa de [Nombre del proyecto 2]" width="1200" height="750" loading="lazy" decoding="async">
+            </figure>
+            <div class="project-body">
+              <h3>[Nombre del proyecto 2]</h3>
+              <p>Consulta del tiempo por ciudad con una API pública, estados de carga y errores controlados.</p>
+              <ul class="tags" aria-label="Tecnologías">
+                <li class="tag">JavaScript</li>
+                <li class="tag">Fetch API</li>
+                <li class="tag">CSS Grid</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://example.com/proyecto-2" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/ejemplo/proyecto-2" target="_blank" rel="noopener noreferrer">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <figure class="project-media">
+              <img src="assets/img/proyecto-3.svg" alt="Vista previa de [Nombre del proyecto 3]" width="1200" height="750" loading="lazy" decoding="async">
+            </figure>
+            <div class="project-body">
+              <h3>[Nombre del proyecto 3]</h3>
+              <p>Landing responsive para un negocio local, con menú móvil accesible y formulario validado.</p>
+              <ul class="tags" aria-label="Tecnologías">
+                <li class="tag">HTML semántico</li>
+                <li class="tag">CSS</li>
+                <li class="tag">Accesibilidad</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://example.com/proyecto-3" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/ejemplo/proyecto-3" target="_blank" rel="noopener noreferrer">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 · Habilidades</p>
+          <h2 id="habilidades-title">Lo que ya uso y lo que estoy aprendiendo</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Fundamentos</h3>
+            <ul class="tags">
+              <li class="tag">HTML5 semántico</li>
+              <li class="tag">CSS3</li>
+              <li class="tag">Flexbox</li>
+              <li class="tag">Grid</li>
+              <li class="tag">Responsive</li>
+              <li class="tag">JavaScript (ES6+)</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Herramientas</h3>
+            <ul class="tags">
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+              <li class="tag">GitHub Pages</li>
+              <li class="tag">DevTools</li>
+              <li class="tag">VS Code</li>
+              <li class="tag">Figma</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>En aprendizaje</h3>
+            <ul class="tags">
+              <li class="tag">Accesibilidad (WCAG)</li>
+              <li class="tag">Testing básico</li>
+              <li class="tag">React</li>
+              <li class="tag">APIs REST</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <!-- TODO: sustituye el email y los perfiles de ejemplo por los tuyos. -->
+        <div class="contact-panel reveal">
+          <p class="eyebrow">04 · Contacto</p>
+          <h2 id="contacto-title">¿Hablamos?</h2>
+          <p class="contact-lead">
+            Estoy buscando mi primera oportunidad como desarrolladora web. Si tienes
+            un proyecto, una práctica o una vacante junior, escríbeme.
+          </p>
+
+          <a class="button button-primary button-large" href="mailto:hola@ejemplo.com">
+            hola@ejemplo.com
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M7 17 17 7M9 7h8v8"/>
+            </svg>
+          </a>
+
+          <ul class="social-links" aria-label="Perfiles">
+            <li><a href="https://github.com/ejemplo" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ejemplo" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="assets/cv/cv.pdf" download>CV en PDF</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Mona Lisa. Hecho con HTML, CSS y JavaScript.</p>
+      <a class="back-to-top" href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mona Lisa",
+      "jobTitle": "Desarrolladora Web Junior",
+      "url": "https://mona47lisa.github.io/",
+      "sameAs": [
+        "https://github.com/ejemplo",
+        "https://www.linkedin.com/in/ejemplo"
+      ]
+    }
+  </script>
+</body>
+</html>
